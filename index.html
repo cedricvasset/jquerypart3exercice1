@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.2.1.js"></script>
+  <title>exercice1 JQ</title>
+</head>
+<body>
+  <button id="button" type="button" name="button">Touchez Moi</button>
+  <input id="number"type="text" name="" value="0" />
+  <script>
+  //au clic sur le bouton je recupere la valeur de l input dans la variable,puis je l incrémente avec ++ et j attribu la nouvelle valeur à l input
+  $(function(){
+    $('#button').click(function(){
+      var number=$('#number').val();
+      number ++;
+      $('#number').val(number);
+    })
+  });
+  </script>
+</body>
+</html>
